@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .popup-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        h1 {
+            color: #ff6347;
+        }
+        p {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .close-btn {
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-container">
+        <h1>Happy Birthday!</h1>
+        <p>Dear [Nama Teman],</p>
+        <p>Wishing you a day filled with love, joy, and wonderful surprises! May all your dreams and wishes come true on this special day.</p>
+        <p>Best wishes,</p>
+        <p>[Nama Anda]</p>
+        <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        function closePopup() {
+            var popup = document.querySelector('.popup-container');
+            popup.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
